@@ -9,7 +9,7 @@ var wg sync.WaitGroup
 
 func printer(ch chan int) {
 	for i := range ch {
-		fmt.Printf("Received %d ", i)
+		fmt.Printf("Received %d \n", i)
 	}
 	wg.Done()
 }
